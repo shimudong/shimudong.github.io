@@ -8,6 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dissecting and Mitigating Diffusion Bias via Mechanistic Interpretability</title>
 
+  <script>
+    // 捕获路径中的大写字母并重定向
+    const path = window.location.pathname.toLowerCase();
+    if (path.startsWith('/difflens')) {
+        window.location.href = 'https://foundation-model-research.github.io' + path.replace(/^\/difflens/i, '/difflens');
+    }
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -21,6 +29,18 @@
 
     gtag('config', 'G-PYVRSFMDRL');
   </script>
+
+  <script>
+        // 捕获路径中的大写字母并重定向
+        const path = window.location.pathname.toLowerCase();
+        if (path.startsWith('/difflens')) {
+            // 如果访问的是大写路径，自动跳转
+            window.location.href = 'https://foundation-model-research.github.io' + path.replace(/^\/difflens/i, '/difflens');
+        } else {
+            // 其他404情况显示默认页面
+            document.write('<h1>Page Not Found</h1>');
+        }
+    </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
