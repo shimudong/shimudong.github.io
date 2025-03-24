@@ -8,12 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dissecting and Mitigating Diffusion Bias via Mechanistic Interpretability</title>
 
-  <script>
-    // 捕获路径中的大写字母并重定向
+  <!-- <script>
     const path = window.location.pathname.toLowerCase();
     if (path.startsWith('/difflens')) {
         window.location.href = 'https://foundation-model-research.github.io' + path.replace(/^\/difflens/i, '/difflens');
     }
+  </script> -->
+
+  <script>
+      const path2 = window.location.pathname.toLowerCase();
+      if (path2.startsWith('/difflens')) {
+          window.location.href = 'https://foundation-model-research.github.io' + path2.replace(/^\/difflens/i, '/difflens');
+      } else {
+          document.write('<h1>Page Not Found</h1>');
+      }
   </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
